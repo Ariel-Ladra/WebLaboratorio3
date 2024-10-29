@@ -20,14 +20,14 @@ header{
     height: 20 px;
     width: 100%;
     position: sticky;
-    background-image: url("fondoImagen/fondo.jpg");
+    background-image: url("../fondoImagen/fondo.jpg");
 
 }
 
 body{
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
-    background-image: url("/fondoImagen/fondo.jpg");
+    background-image: url("../fondoImagen/fondo.jpg");
     background-repeat: repeat;
 
 }
