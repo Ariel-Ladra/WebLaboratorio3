@@ -1,0 +1,330 @@
+/************************************ INICIO DEL CSS RESET ************************************/
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/************************************ FIN DEL CSS RESET ************************************/
+
+header{
+    top:0;
+    padding-left: 2%;
+    margin-top: 0.5%;
+ 	display: flex;
+    height: 20 px;
+    width: 100%;
+    position: sticky;
+    background-image: url("fondoImagen/fondo.jpg");
+
+}
+
+body{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    background-image: url("/fondoImagen/fondo.jpg");
+    background-repeat: repeat;
+
+}
+
+#logo{  
+    width: 30%;
+    padding-left: 1%;
+    padding-top: 1%;
+
+}
+
+#imgLogo{   
+    max-width: 250px;}
+
+nav{
+    width: 70%;
+    text-align: right;
+    margin: auto;
+    padding-right: 2%;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+p{
+	color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1.05rem;
+    position: relative;
+    padding-right: 2rem;
+}
+
+
+nav ul li a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+    color:hsl(40, 42%, 62%);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1aa1;
+    padding-top: 2%;
+    border-radius: 4px;
+}
+
+.submenu li {
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    white-space: nowrap;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul li:hover .submenu li:hover {
+    background-color: hsla(40, 42%, 62%, 0.267);
+}
+
+h1{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 2.0rem;
+}
+section{
+    margin-top: 1%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#imgSection1{
+    border-radius: 2%;
+}
+
+.secundario{
+	margin-top: 5%;
+	display: flex;
+
+}
+
+.secundario div{
+	width: 33%;
+	padding: 2%;
+	text-align: center;
+}
+
+.secundario div a img{
+	width: 100%;
+    border-radius: 2%;
+	margin-bottom: 2rem;
+}
+
+h1{
+    font: 1.9rem;
+}
+
+h2{
+    font-size: 1.7rem;
+    margin-top: 3%;
+}
+
+h3{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+h1,h2,h3,h4{    color: white;}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    height: 100px;
+    width: auto;
+
+}
+
+footer a{    margin-left: 3%;}
+
+.icon{
+    margin-top: 2%;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 2.5%;
+}
+
+
+
+/************************************ ESTILO HTML TEMPORADAS ************************************/
+
+.temporadas{    width: 95%;}
+
+.nombreSerie{
+    font-weight: bold;
+    color:#ffc44f;
+}
+
+.nombrePersonaje{    
+    font-style: italic;
+    font-weight: bold;
+    color: #3A5D7B;
+}
+
+.esteticaTemp{
+    background-color: #1a1a1ad2 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+    padding: 2%;
+    border: solid #b39760 2px;
+    border-radius: 5px;
+}
+
+.esteticaTemp img{
+    width: 50%;
+    margin: 1%;
+}
+
+.textoTemp{
+    width: 50%;
+    margin-left: 3%;
+    margin-top: 1%;
+    gap: 40px;
+}
+
+.ancla{
+    height: 10px;
+}
+
+
+/************************************ ESTILO HTML CONTACTANOS ************************************/
+
+.formulario{
+    width: 95%;
+    margin: 2% auto;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border: solid hsl(40, 35%, 54%) 3px;
+    border-radius: 10px;
+    background-color: #1a1a1ad2 ;
+    gap: 20px;
+}
+.formulario h2{
+    text-align: center;
+    text-decoration:underline;
+    margin-bottom: 4%;
+}
+
+.formulario img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.formulario form{
+    width: 50%; /* Ajusta el ancho del formulario */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5px; /* Espacio pequeño debajo del label */
+    font-weight: 600; /* Opcional, para destacar los labels */
+    color: white;
+}
+input, textarea {
+    padding: 8px;
+    border: solid #b39760 1px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 3%; 
+}
+
+
+input:focus , textarea:focus{    background-color: #b397607c;}
+
+
+/************************************ ESTILO HTML GALERIA ************************************/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin:  auto;
+    margin-top: 2%;
+    border: solid hsl(40, 35%, 54%) 3px;
+    border-radius: 10px;
+    background-color: #1a1a1ad2 ;
+    padding: 2%;
+}
+
+.galeria a {
+    flex: 1 1 24%; 
+    max-width: 24%; 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.galeria img {
+    width: auto;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.tituloGaleria h2{
+    text-align: center;
+}
+
+/************************************ ESTILO HTML PERSONAJES ************************************/
+
+.esteticaPersonajes{
+    background-color: #1a1a1ad2 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+    padding: 2%;
+    border: solid #b39760 2px;
+    border-radius: 5px;
+}
+
+.esteticaPersonajes img{
+    width: 50%;
+    max-height: 400px;
+    margin: 1%;
+}
+
+.textoPersonajes{
+    width: 50%;
+    margin-left: 3%;
+    margin-top: 1%;
+    gap: 40px;
+}
+
+.ancla{
+    height: 10px;
+}
